@@ -11,6 +11,10 @@ sudo apt-get dist-upgrade -y
 sudo apt-get install git -y
 sudo apt-get install python3 -y
 sudo apt-get install screen -y
+sudo apt-get install fimap
+sudo apt-get install commix
+sudo apt-get install sqlmap
+sudo apt-get install python3
 pip install ldapdomaindump
 
 cd /opt
@@ -200,6 +204,18 @@ cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Crackmapexec Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/si9int/cc.py.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- cc.py Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/sqlmapproject/sqlmap.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Sqlmap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/derv82/wifite2.git
