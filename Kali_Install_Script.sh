@@ -11,10 +11,10 @@ sudo apt-get dist-upgrade -y
 sudo apt-get install git -y
 sudo apt-get install python3 -y
 sudo apt-get install screen -y
-sudo apt-get install fimap
-sudo apt-get install commix
-sudo apt-get install sqlmap
-sudo apt-get install python3
+sudo apt-get install fimap -y
+sudo apt-get install commix -y
+sudo apt-get install sqlmap -y
+sudo apt-get install python3 -y
 pip install ldapdomaindump
 
 cd /opt
