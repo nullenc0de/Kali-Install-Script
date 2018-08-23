@@ -207,6 +207,9 @@ echo "--------------- Sqlmap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/derv82/wifite2.git
+cd wifite2
+sudo python setup.py install
+cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Wifite2 Installed, Next Tool! ----------------"
