@@ -5,9 +5,7 @@
 #I decided on a modifiable script instead. When I started to build the script, 
 #I built upon the foundation that Matthew Clark May had used in a Repository he created, but no longer maintains. Credit where it's due.
 
-sudo apt-get update
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+apt-get update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo
 sudo apt-get install git -y
 sudo apt-get install python3 -y
 sudo apt-get install screen -y
@@ -17,9 +15,6 @@ sudo apt-get install commix -y
 sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
 pip install ldapdomaindump
-
-cd /opt
-ls | xargs -I{} git -C {} pull
 
 echo "-------------------------------------------------------------------"
 echo "----- Updated Github Tools, Next Phase ------"
@@ -224,6 +219,9 @@ echo "-------------------------------------------------------------------"
 echo "--------------- tplmap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+cd /opt
+ls | xargs -I{} git -C {} pull
+
 echo "-------------------------------------------------------------------"
-echo "--------------- All Tools Installed! Go Break Some Stuff! ---------"
+echo "--------------- All Tools Installed/Updated! Go Break Some Stuff! ---------"
 echo "-------------------------------------------------------------------"
