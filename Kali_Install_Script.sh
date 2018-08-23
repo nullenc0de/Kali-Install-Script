@@ -12,6 +12,7 @@ sudo apt-get install git -y
 sudo apt-get install python3 -y
 sudo apt-get install screen -y
 sudo apt-get install fimap -y
+sudo apt-get install sshpass -y
 sudo apt-get install commix -y
 sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
