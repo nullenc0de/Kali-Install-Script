@@ -16,6 +16,9 @@ sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
 pip install ldapdomaindump
 
+cd /opt
+ls | xargs -I{} git -C {} pull
+
 echo "-------------------------------------------------------------------"
 echo "----- Updated Github Tools, Next Phase ------"
 echo "-------------------------------------------------------------------"
@@ -222,9 +225,6 @@ cd /opt
 echo "-------------------------------------------------------------------"
 echo "--------------- tplmap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
-
-cd /opt
-ls | xargs -I{} git -C {} pull
 
 echo "-------------------------------------------------------------------"
 echo "--------------- All Tools Installed/Updated! Go Break Some Stuff! ---------"
