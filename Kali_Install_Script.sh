@@ -138,6 +138,10 @@ echo "--------------- Bucketeer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/DanMcInerney/icebreaker.git
+cd icebreaker
+./setup.sh
+pipenv install --three
+cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Icebreaker Installed, Next Tool! ----------------"
