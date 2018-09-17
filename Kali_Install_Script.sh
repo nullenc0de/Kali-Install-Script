@@ -17,6 +17,17 @@ sudo apt-get install python3 -y
 pip install ldapdomaindump
 
 cd /opt
+
+sudo git clone https://github.com/leebaird/discover.git
+cd discover/
+sudo ./update.sh
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Discover Installed, It installed Lots!! Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+cd /opt
 ls | xargs -I{} git -C {} pull
 
 echo "-------------------------------------------------------------------"
@@ -73,15 +84,6 @@ sudo git clone https://github.com/danielmiessler/SecLists.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- SecLists Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-sudo git clone https://github.com/leebaird/discover.git
-cd discover/
-sudo ./update.sh
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Discover Installed, It installed Lots!! Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/1N3/Sn1per.git
