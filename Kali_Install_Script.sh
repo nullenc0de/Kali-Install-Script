@@ -219,6 +219,22 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Wifite2 Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+sudo git clone https://github.com/s0lst1c3/eaphammer.git
+cd eaphammer
+./kali-setup
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- eaphammer Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/nulpwn/WiPray.git
+pip install wpa_supplicant
+
+echo "-------------------------------------------------------------------"
+echo "--------------- WiPray Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/epinna/tplmap.git
 cd tplmap
 pip install -r requirements.txt
