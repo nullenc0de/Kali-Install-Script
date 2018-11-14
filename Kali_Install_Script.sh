@@ -223,13 +223,6 @@ echo "-------------------------------------------------------------------"
 echo "--------------- eaphammer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/nulpwn/WiPray.git
-pip install wpa_supplicant
-
-echo "-------------------------------------------------------------------"
-echo "--------------- WiPray Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
 sudo git clone https://github.com/epinna/tplmap.git
 cd tplmap
 pip install -r requirements.txt
