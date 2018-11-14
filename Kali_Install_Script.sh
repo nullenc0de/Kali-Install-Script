@@ -86,16 +86,6 @@ echo "-------------------------------------------------------------------"
 echo "--------------- SecLists Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/1N3/Sn1per.git
-cd Sn1per/
-echo "Follow Prompts!!"
-sudo ./install.sh
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Sn1per Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
 sudo git clone https://github.com/maaaaz/impacket.git && cd impacket
 pip install .
 cd /opt
@@ -104,6 +94,12 @@ sudo git clone https://github.com/jhaddix/domain.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Domain Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/SpiderLabs/Spray.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Spray Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/cakinney/domained.git
@@ -118,7 +114,6 @@ echo "-------------------------------------------------------------------"
 sudo git clone https://github.com/elceef/dnstwist.git
 sudo apt-get install python-dnspython python-geoip python-whois python-requests python-ssdeep python-cffi -y
 cd /opt
-
 
 echo "-------------------------------------------------------------------"
 echo "--------------- DnsTwist Installed, Next Tool! ----------------"
@@ -242,6 +237,16 @@ cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- tplmap Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+sudo git clone https://github.com/1N3/Sn1per.git
+cd Sn1per/
+echo "Follow Prompts!!"
+sudo ./install.sh
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Sn1per Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 echo "-------------------------------------------------------------------"
