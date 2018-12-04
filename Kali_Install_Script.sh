@@ -8,6 +8,7 @@
 apt-get update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo
 sudo apt-get install git -y
 sudo apt-get install python3 -y
+sudo apt-get install hostapd -y
 sudo apt-get install screen -y
 sudo apt-get install fimap -y
 sudo apt-get install sshpass -y
@@ -59,6 +60,13 @@ cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Brutespray Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/byt3bl33d3r/DeathStar
+pip3 install -r requirements.txt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- DeathStar Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/ztgrace/changeme.git
