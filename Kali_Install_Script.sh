@@ -15,6 +15,7 @@ sudo apt-get install sshpass -y
 sudo apt-get install commix -y
 sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
+sudo apt-get install python-pip -y
 pip install ldapdomaindump
 wget https://raw.githubusercontent.com/nnposter/nndefaccts/master/http-default-accounts-fingerprints-nndefaccts.lua -O /usr/share/nmap/nselib/data/http-default-accounts-fingerprints.lua
 
