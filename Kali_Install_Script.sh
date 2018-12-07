@@ -96,10 +96,6 @@ echo "-------------------------------------------------------------------"
 echo "--------------- SecLists Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/maaaaz/impacket.git && cd impacket
-pip install .
-cd /opt
-
 sudo git clone https://github.com/jhaddix/domain.git
 
 echo "-------------------------------------------------------------------"
