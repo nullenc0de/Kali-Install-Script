@@ -230,15 +230,6 @@ echo "-------------------------------------------------------------------"
 echo "--------------- eaphammer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-git clone https://github.com/InfamousSYN/rogue.git
-cd ./rogue
-python install.py
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Rogue Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
 sudo git clone https://github.com/epinna/tplmap.git
 cd tplmap
 pip install -r requirements.txt
