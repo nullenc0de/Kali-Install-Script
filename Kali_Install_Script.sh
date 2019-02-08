@@ -18,7 +18,6 @@ sudo apt-get install python3 -y
 sudo apt-get install python-pip -y
 apt-get install freeradius -y
 pip install ldapdomaindump
-wget https://raw.githubusercontent.com/nnposter/nndefaccts/master/http-default-accounts-fingerprints-nndefaccts.lua -O /usr/share/nmap/nselib/data/http-default-accounts-fingerprints.lua
 
 cd /opt
 
@@ -107,15 +106,6 @@ git clone https://github.com/SpiderLabs/Spray.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Spray Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-sudo git clone https://github.com/cakinney/domained.git
-cd domained/
-sudo python domained.py --install
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Domained Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo git clone https://github.com/elceef/dnstwist.git
