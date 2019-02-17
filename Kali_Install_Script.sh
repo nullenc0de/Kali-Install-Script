@@ -18,6 +18,7 @@ sudo apt-get install python3 -y
 sudo apt-get install python-pip -y
 apt-get install freeradius -y
 pip install pipenv
+pip3 install pipenv
 pip install ldapdomaindump
 
 cd /opt
