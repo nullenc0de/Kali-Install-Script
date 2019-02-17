@@ -17,6 +17,7 @@ sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
 sudo apt-get install python-pip -y
 apt-get install freeradius -y
+pip install pipenv
 pip install ldapdomaindump
 
 cd /opt
