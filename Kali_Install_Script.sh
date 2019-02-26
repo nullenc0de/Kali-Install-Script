@@ -17,19 +17,6 @@ sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
 sudo apt-get install python-pip -y
 apt-get install freeradius -y
-pip install pipenv
-pip3 install pipenv
-pip install libtmux
-pip install netifaces
-pip install requests
-pip install termcolor
-pip3 install IPython
-pip3 install netaddr
-pip3 install python-libnmap
-pip3 install termcolor
-sudo apt-get install python-pip
-sudo pip install termcolor
-sudo pip3 install termcolor
 pip install ldapdomaindump
 
 cd /opt
