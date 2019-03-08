@@ -229,6 +229,29 @@ echo "-------------------------------------------------------------------"
 echo "--------------- tplmap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+git clone https://github.com/nikallass/sharesearch.git
+cd sharesearch
+pip3 install -r requirements.txt
+sudo apt-get install cifs-utils
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- sharesearch Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/SySS-Research/Seth.git
+cd Seth
+pip3 install -r requirements.txt
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Seth Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/Arvanaghi/SessionGopher.git
+
+git clone https://github.com/AlessandroZ/LaZagne.git
+
 sudo git clone https://github.com/1N3/Sn1per.git
 cd Sn1per/
 echo "Follow Prompts!!"
