@@ -17,7 +17,7 @@ sudo apt-get install sqlmap -y
 sudo apt-get install python3 -y
 sudo apt-get install python-pip -y
 apt-get install freeradius -y
-pip install ldapdomaindump
+pip3 install ldapdomaindump
 
 cd /opt
 
@@ -96,13 +96,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- SecLists Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/jhaddix/domain.git
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Domain Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-git clone https://github.com/SpiderLabs/Spray.git
+git clone https://github.com/Greenwolf/Spray.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Spray Installed, Next Tool! ----------------"
