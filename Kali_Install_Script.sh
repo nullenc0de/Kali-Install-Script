@@ -128,6 +128,7 @@ echo "-------------------------------------------------------------------"
 sudo git clone https://github.com/DanMcInerney/icebreaker.git
 cd icebreaker
 ./setup.sh
+pip3 install pipenv
 pipenv install --three
 cd /opt
 
