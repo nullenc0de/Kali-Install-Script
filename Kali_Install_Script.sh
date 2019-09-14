@@ -54,10 +54,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Metasploit configured, Next Phase -----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/x90skysn3k/brutespray.git
-cd brutespray/
-sudo pip install -r requirements.txt
-cd /opt
+apt-get install brutespray
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Brutespray Installed, Next Tool! ----------------"
