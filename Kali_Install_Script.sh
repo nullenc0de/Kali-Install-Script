@@ -17,6 +17,7 @@ apt-get install -y gobuster
 apt-get install -y amass
 apt-get install -y masscan
 pip3 install ldapdomaindump
+pip3 install adidnsdump
 
 #gwdomains
 export GOPATH=/opt/gwdomains
