@@ -6,12 +6,7 @@
 #I built upon the foundation that Matthew Clark May had used in a Repository he created, but no longer maintains. Credit where it's due.
 
 apt-get update ; apt-get -y upgrade ; apt-get -y dist-upgrade ; apt-get -y autoremove ; apt-get -y autoclean ; echo
-sudo apt-get install git -y
-sudo apt-get install hostapd -y
-sudo apt-get install screen -y
-sudo apt-get install python3 -y
-sudo apt-get install python-pip -y
-apt-get install freeradius -y
+
 apt-get install brutespray -y
 apt-get install -y gobuster
 apt-get install -y amass
@@ -227,11 +222,11 @@ echo "--------------- hcxtools Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
-pip install --user pipenv
+pip3 install --user pipenv
 sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
-cd CrackMapExec && pipenv install
-pipenv shell
-python setup.py install
+cd CrackMapExec && python3 pipenv install
+python3 -m pipenv shell
+python3 setup.py install
 cd /opt
 
 echo "-------------------------------------------------------------------"
