@@ -14,6 +14,75 @@ apt-get install -y masscan
 pip3 install ldapdomaindump
 pip3 install adidnsdump
 
+export GOPATH=/opt/wildcheck
+go get -u github.com/theblackturtle/wildcheck
+ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
+
+export GOPATH=/opt/nuclei
+go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
+ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
+
+export GOPATH=/opt/kxss
+go get -u github.com/tomnomnom/hacks/kxss
+ln -s /opt/kxss/bin/kxss /usr/local/bin/kxss
+
+export GOPATH=/opt/gospider
+go get -u github.com/jaeles-project/gospider
+ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
+
+export GOPATH=/opt/filter-resolved
+go get -u github.com/tomnomnom/hacks/filter-resolved
+ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
+
+export GOPATH=/opt/unfurl
+go get -u github.com/tomnomnom/hacks/unfurl
+ln -s /opt/unfurl/bin/unfurl /usr/local/bin/unfurl
+
+export GOPATH=/opt/cidr2ip
+go get -u github.com/codeexpress/cidr2ip
+ln -s /opt/cidr2ip/bin/cidr2ip /usr/local/bin/cidr2ip
+
+export GOPATH=/opt//anti-burl
+go get -u github.com/tomnomnom/hacks/anti-burl
+ln -s /opt/anti-burl/bin/anti-burl /usr/local/bin//anti-burl
+
+export GOPATH=/opt/ffuf
+go get -u github.com/ffuf/ffuf
+ln -s /opt/ffuf/bin/ffuf /usr/local/bin/ffuf
+
+export GOPATH=/opt/get-title
+go get -u github.com/tomnomnom/hacks/get-title
+ln -s /opt/get-title/bin/get-title /usr/local/bin/get-title
+
+export GOPATH=/opt/gau
+go get -u github.com/lc/gau
+ln -s /opt/gau/bin/gau /usr/local/bin/gau
+
+export GOPATH=/opt/tko-subs
+go get github.com/anshumanbh/tko-subs
+ln -s /opt/tko-subs/bin/tko-subs /usr/local/bin/tko-subs
+
+export GOPATH=/opt/webanalyze
+go get -u github.com/rverton/webanalyze/...
+ln -s /opt/webanalyze/bin/webanalyze /usr/local/bin/webanalyze
+
+export GOPATH=/opt/otxurls
+go get -u github.com/lc/otxurls
+ln -s /opt/otxurls/bin/otxurls /usr/local/bin/otxurls
+
+export GOPATH=/opt/hakrawler
+go get github.com/hakluke/hakrawler
+ln -s /opt/hakrawler/bin/hakrawler /usr/local/bin/hakrawler
+
+export GOPATH=/opt/qsreplace
+go get -u github.com/tomnomnom/qsreplace
+ln -s /opt/qsreplace/bin/qsreplace /usr/local/bin/qsreplace
+
+#subjack
+export GOPATH=/opt/subjack
+go get github.com/haccer/subjack
+ln -s /opt/subjack/bin/subjack /usr/local/bin/subjack
+
 #gwdomains
 export GOPATH=/opt/gwdomains
 go get -u github.com/fuzzerk/gwdomains
@@ -33,6 +102,11 @@ ln -s /opt/fff/bin/fff /usr/local/bin/fff
 export GOPATH=/opt/httprobe
 go get -u github.com/tomnomnom/httprobe
 ln -s /opt/httprobe/bin/httprobe /usr/local/bin/httprobe
+
+# FProbe
+export GOPATH=/opt/fprobe
+go get -u github.com/theblackturtle/fprobe
+ln -s /opt/fprobe/bin/fprobe /usr/local/bin/fprobe
 
 # Waybackurls
 export GOPATH=/opt/waybackurls
@@ -105,12 +179,6 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Metasploit configured, Next Phase -----------------"
 echo "-------------------------------------------------------------------"
 
-apt-get install brutespray -y
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Brutespray Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
 git clone https://github.com/byt3bl33d3r/DeathStar
 pip3 install -r requirements.txt
 
@@ -118,7 +186,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- DeathStar Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/ztgrace/changeme.git
+git clone https://github.com/ztgrace/changeme.git
 cd changeme/
 sudo apt-get install unixodc-dev -y
 sudo pip install -r requirements.txt
