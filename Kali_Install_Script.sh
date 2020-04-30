@@ -180,7 +180,9 @@ echo "--------------- Metasploit configured, Next Phase -----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/byt3bl33d3r/DeathStar
+cd DeathStar
 pip3 install -r requirements.txt
+cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- DeathStar Installed, Next Tool! ----------------"
@@ -196,17 +198,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Changeme Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/FortyNorthSecurity/EyeWitness.git
-cd EyeWitness/
-cd setup/
-sudo ./setup.sh -y
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- EyeWitness Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-sudo git clone https://github.com/danielmiessler/SecLists.git
+git clone https://github.com/danielmiessler/SecLists.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- SecLists Installed, Next Tool! ----------------"
@@ -218,56 +210,41 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Spray Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/elceef/dnstwist.git
-sudo apt-get install python-dnspython python-geoip python-whois python-requests python-ssdeep python-cffi -y
-cd /opt
+pip install dnstwist
 
 echo "-------------------------------------------------------------------"
 echo "--------------- DnsTwist Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/vulnersCom/nmap-vulners.git
+git clone https://github.com/vulnersCom/nmap-vulners.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- nmap-vulners Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/si9int/cc.py.git
-
-echo "-------------------------------------------------------------------"
-echo "--------------- cc.py Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-sudo git clone https://github.com/abhaybhargav/bucketeer.git
+git clone https://github.com/abhaybhargav/bucketeer.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Bucketeer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/DanMcInerney/icebreaker.git
+git clone https://github.com/DanMcInerney/icebreaker.git
 cd icebreaker
 ./setup.sh
-pip3 install pipenv
-pipenv install --three
+python3 -m pipenv install --three
 cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Icebreaker Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://bitbucket.org/grimhacker/office365userenum.git
-
-echo "-------------------------------------------------------------------"
-echo "------------- O365 Pass Spray Tool Installed, Next Tool! ----------"
-echo "-------------------------------------------------------------------"
-
-sudo git clone https://github.com/mdsecactivebreach/LinkedInt.git
-sudo pip install beautifulsoup4
-sudo pip install thready
+git clone https://github.com/initstring/linkedin2username.git
+cd linkedin2username
+pip3 install -r requirements.txt
 cd /opt
 
 echo "-------------------------------------------------------------------"
-echo "--------------- LinkedInt Installed, Next Tool! ----------------"
+echo "--------------- Linked2username Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/ZerBea/hcxdumptool.git
@@ -301,13 +278,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Crackmapexec Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo git clone https://github.com/si9int/cc.py.git
-
-echo "-------------------------------------------------------------------"
-echo "--------------- cc.py Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-sudo git clone https://github.com/sqlmapproject/sqlmap.git
+git clone https://github.com/sqlmapproject/sqlmap.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Sqlmap Installed, Next Tool! ----------------"
