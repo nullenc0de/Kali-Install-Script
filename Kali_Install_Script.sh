@@ -191,7 +191,7 @@ echo "-------------------------------------------------------------------"
 git clone https://github.com/ztgrace/changeme.git
 cd changeme/
 sudo apt-get install unixodbc-dev -y
-sudo pip install -r requirements.txt
+sudo pip3 install -r requirements.txt
 cd /opt
 
 echo "-------------------------------------------------------------------"
