@@ -24,10 +24,6 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Sn1per Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-export GOPATH=/opt/wildcheck
-go get -u github.com/theblackturtle/wildcheck
-ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
-
 export GOPATH=/opt/nuclei
 go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
@@ -181,6 +177,12 @@ cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Changeme Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/projectdiscovery/nuclei-templates.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Nuclei Templates Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/danielmiessler/SecLists.git
