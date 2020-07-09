@@ -14,6 +14,16 @@ apt-get install -y masscan
 pip3 install ldapdomaindump
 pip3 install adidnsdump
 
+git clone https://github.com/1N3/Sn1per.git
+cd Sn1per/
+echo "Follow Prompts!!"
+sudo ./install.sh
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Sn1per Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 export GOPATH=/opt/wildcheck
 go get -u github.com/theblackturtle/wildcheck
 ln -s /opt/wildcheck/bin/wildcheck /usr/local/bin/wildcheck
@@ -299,18 +309,8 @@ git clone https://github.com/Arvanaghi/SessionGopher.git
 
 git clone https://github.com/AlessandroZ/LaZagne.git
 
-git clone https://github.com/1N3/Sn1per.git
-cd Sn1per/
-echo "Follow Prompts!!"
-sudo ./install.sh
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Sn1per Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
 git clone https://github.com/Wh1t3Rh1n0/air-hammer.git
-pip install wpa_supplicant
+pip3 install wpa_supplicant
 
 echo "-------------------------------------------------------------------"
 echo "--------------- air hammer Installed, Next Tool! ----------------"
