@@ -70,10 +70,6 @@ export GOPATH=/opt/otxurls
 go get -u github.com/lc/otxurls
 ln -s /opt/otxurls/bin/otxurls /usr/local/bin/otxurls
 
-export GOPATH=/opt/hakrawler
-go get github.com/hakluke/hakrawler
-ln -s /opt/hakrawler/bin/hakrawler /usr/local/bin/hakrawler
-
 export GOPATH=/opt/qsreplace
 go get -u github.com/tomnomnom/qsreplace
 ln -s /opt/qsreplace/bin/qsreplace /usr/local/bin/qsreplace
@@ -146,11 +142,6 @@ echo "-------------------------------------------------------------------"
 
 cd /opt
 
-sudo git clone https://github.com/leebaird/discover.git
-cd discover/
-sudo ./update.sh
-cd /opt
-
 echo "-------------------------------------------------------------------"
 echo "--------------- Discover Installed, It installed Lots!! Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
@@ -170,22 +161,6 @@ sudo apt-get install htop hexedit exiftool exif -y
 
 echo "-------------------------------------------------------------------"
 echo "---------- Basic Tools Installed, Next Phase ------------"
-echo "-------------------------------------------------------------------"
-
-sudo service postgresql start
-msfdb init
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Metasploit configured, Next Phase -----------------"
-echo "-------------------------------------------------------------------"
-
-git clone https://github.com/byt3bl33d3r/DeathStar
-cd DeathStar
-pip3 install -r requirements.txt
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- DeathStar Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/ztgrace/changeme.git
@@ -226,16 +201,6 @@ git clone https://github.com/abhaybhargav/bucketeer.git
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Bucketeer Installed, Next Tool! ----------------"
-echo "-------------------------------------------------------------------"
-
-git clone https://github.com/DanMcInerney/icebreaker.git
-cd icebreaker
-./setup.sh
-python3 -m pipenv install --three
-cd /opt
-
-echo "-------------------------------------------------------------------"
-echo "--------------- Icebreaker Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/initstring/linkedin2username.git
