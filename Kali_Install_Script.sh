@@ -13,6 +13,7 @@ apt-get install -y amass
 apt-get install -y masscan
 pip3 install ldapdomaindump
 pip3 install adidnsdump
+pip3 install mitm6
 
 git clone https://github.com/1N3/Sn1per.git
 cd Sn1per/
@@ -25,7 +26,7 @@ echo "--------------- Sn1per Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 export GOPATH=/opt/nuclei
-go get -u github.com/projectdiscovery/nuclei/cmd/nuclei
+go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
 export GOPATH=/opt/kxss
@@ -179,6 +180,15 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Changeme Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+git clone https://github.com/SecureAuthCorp/impacket.git
+cd impacket
+pip3 install .
+python3 setup.py install
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Impacket Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 git clone https://github.com/projectdiscovery/nuclei-templates.git
 
 echo "-------------------------------------------------------------------"
@@ -243,13 +253,10 @@ echo "-------------------------------------------------------------------"
 echo "--------------- hcxtools Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-sudo apt-get install -y libssl-dev libffi-dev python-dev build-essential
-pip3 install --user pipenv
-sudo git clone --recursive https://github.com/byt3bl33d3r/CrackMapExec
-cd CrackMapExec && python3 pipenv install
-python3 -m pipenv shell
-python3 setup.py install
-cd /opt
+apt-get install python3-venv
+python3 -m pip install pipx
+pipx ensurepath
+pipx install crackmapexec
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Crackmapexec Installed, Next Tool! ----------------"
