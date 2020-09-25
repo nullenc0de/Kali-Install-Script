@@ -26,7 +26,7 @@ echo "--------------- Sn1per Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 export GOPATH=/opt/nuclei
-go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+go get -u github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 
 export GOPATH=/opt/kxss
@@ -184,6 +184,7 @@ git clone https://github.com/SecureAuthCorp/impacket.git
 cd impacket
 pip3 install .
 python3 setup.py install
+cd /opt
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Impacket Installed, Next Tool! ----------------"
