@@ -257,6 +257,10 @@ echo "-------------------------------------------------------------------"
 echo "--------------- hcxtools Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+git clone https://github.com/byt3bl33d3r/CrackMapExec.git
+cd CrackMapExec/
+pip3 install -r requirements.txt
+cd /opt
 apt-get install python3-venv
 python3 -m pip install pipx
 pipx ensurepath
