@@ -15,6 +15,7 @@ pip3 install ldapdomaindump
 pip3 install adidnsdump
 pip3 install mitm6
 gem install evil-winrm
+pip install bloodhound
 
 git clone https://github.com/1N3/Sn1per.git
 cd Sn1per/
