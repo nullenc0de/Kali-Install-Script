@@ -11,11 +11,6 @@ apt-get install brutespray -y
 apt-get install -y gobuster
 apt-get install -y amass
 apt-get install -y masscan
-pip3 install ldapdomaindump
-pip3 install adidnsdump
-pip3 install mitm6
-gem install evil-winrm
-pip install bloodhound
 
 git clone https://github.com/1N3/Sn1per.git
 cd Sn1per/
@@ -333,6 +328,12 @@ pip3 install wpa_supplicant
 echo "-------------------------------------------------------------------"
 echo "--------------- air hammer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
+
+pip3 install ldapdomaindump
+pip3 install adidnsdump
+pip3 install mitm6
+gem install evil-winrm
+pip install bloodhound
 
 echo "-------------------------------------------------------------------"
 echo "--------------- All Tools Installed/Updated! Go Break Some Stuff! ---------"
