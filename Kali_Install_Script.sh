@@ -25,6 +25,7 @@ echo "-------------------------------------------------------------------"
 export GOPATH=/opt/nuclei
 go get -u github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
+nuclei -update-templates
 
 export GOPATH=/opt/kxss
 go get -u github.com/tomnomnom/hacks/kxss
