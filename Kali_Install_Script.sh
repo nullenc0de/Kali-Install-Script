@@ -14,6 +14,7 @@ apt-get install -y masscan
 pip3 install ldapdomaindump
 pip3 install adidnsdump
 pip3 install mitm6
+gem install evil-winrm
 
 git clone https://github.com/1N3/Sn1per.git
 cd Sn1per/
@@ -168,6 +169,12 @@ sudo apt-get install htop hexedit exiftool exif -y
 
 echo "-------------------------------------------------------------------"
 echo "---------- Basic Tools Installed, Next Phase ------------"
+echo "-------------------------------------------------------------------"
+
+git clone https://github.com/sense-of-security/ADRecon.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- ADReconInstalled, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 git clone https://github.com/ztgrace/changeme.git
