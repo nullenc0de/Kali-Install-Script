@@ -248,11 +248,7 @@ echo "-------------------------------------------------------------------"
 echo "--------------- hcxdumptool Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
-git clone https://github.com/ZerBea/hcxtools.git
-cd hcxtools
-apt-get install libcurl4-openssl-dev libssl-dev zlib1g-dev libpcap-dev -y
-make install
-cd /opt
+apt-get install -y hcxtools
 
 echo "-------------------------------------------------------------------"
 echo "--------------- hcxtools Installed, Next Tool! ----------------"
