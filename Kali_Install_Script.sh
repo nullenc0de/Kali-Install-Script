@@ -258,10 +258,11 @@ git clone https://github.com/byt3bl33d3r/CrackMapExec.git
 cd CrackMapExec/
 pip3 install -r requirements.txt
 cd /opt
-apt-get install python3-venv
-python3 -m pip install pipx
-pipx ensurepath
-pipx install crackmapexec
+#apt-get install python3-venv
+#python3 -m pip install pipx
+#pipx ensurepath
+#pipx install crackmapexec
+apt install -y crackmapexec
 
 echo "-------------------------------------------------------------------"
 echo "--------------- Crackmapexec Installed, Next Tool! ----------------"
