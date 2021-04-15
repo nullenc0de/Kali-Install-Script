@@ -324,11 +324,10 @@ git clone https://github.com/Arvanaghi/SessionGopher.git
 
 git clone https://github.com/AlessandroZ/LaZagne.git
 
-git clone https://github.com/Wh1t3Rh1n0/air-hammer.git
-pip3 install wpa_supplicant
+git clone --depth 1 https://github.com/v1s1t0r1sh3r3/airgeddon.git
 
 echo "-------------------------------------------------------------------"
-echo "--------------- air hammer Installed, Next Tool! ----------------"
+echo "--------------- airgeddon Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 pip3 install ldapdomaindump
