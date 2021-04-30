@@ -23,7 +23,7 @@ echo "--------------- Sn1per Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
 export GOPATH=/opt/nuclei
-go get -u github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 ln -s /opt/nuclei/bin/nuclei /usr/local/bin/nuclei
 nuclei -update-templates
 
@@ -38,6 +38,10 @@ ln -s /opt/gospider/bin/gospider /usr/local/bin/gospider
 export GOPATH=/opt/filter-resolved
 go get -u github.com/tomnomnom/hacks/filter-resolved
 ln -s /opt/filter-resolved/bin/filter-resolved /usr/local/bin/filter-resolved
+
+export GOPATH=/opt/httpx
+GO111MODULE=on go get -v github.com/projectdiscovery/httpx/cmd/httpx
+ln -s /opt/httpx/bin/httpx /usr/local/bin/httpx
 
 export GOPATH=/opt/unfurl
 go get -u github.com/tomnomnom/hacks/unfurl
