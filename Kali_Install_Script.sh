@@ -258,6 +258,12 @@ echo "-------------------------------------------------------------------"
 echo "--------------- hcxtools Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+git clone https://github.com/cube0x0/KrbRelay.git
+
+echo "-------------------------------------------------------------------"
+echo "--------------- KrbRelay Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 git clone https://github.com/byt3bl33d3r/CrackMapExec.git
 cd CrackMapExec/
 pip3 install -r requirements.txt
