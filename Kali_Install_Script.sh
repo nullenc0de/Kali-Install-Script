@@ -302,6 +302,15 @@ echo "-------------------------------------------------------------------"
 echo "--------------- eaphammer Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+sudo git clone https://github.com/trustedsec/SeeYouCM-Thief.git
+cd SeeYouCM-Thief
+python3 -m pip install -r requirements.txt
+cd /opt
+
+echo "-------------------------------------------------------------------"
+echo "--------------- SeeYouCM-Thief Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/epinna/tplmap.git
 cd tplmap
 pip install -r requirements.txt
