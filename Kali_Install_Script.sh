@@ -284,6 +284,13 @@ echo "-------------------------------------------------------------------"
 echo "--------------- Sqlmap Installed, Next Tool! ----------------"
 echo "-------------------------------------------------------------------"
 
+sudo git clone https://github.com/ly4k/Certipy.git
+pip3 install /opt/Certipy
+
+echo "-------------------------------------------------------------------"
+echo "--------------- Certipy Installed, Next Tool! ----------------"
+echo "-------------------------------------------------------------------"
+
 sudo git clone https://github.com/derv82/wifite2.git
 cd wifite2
 sudo python setup.py install
