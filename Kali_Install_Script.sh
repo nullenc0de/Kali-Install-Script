@@ -11,7 +11,7 @@
 apt update && apt upgrade -y
 
 # Install required packages
-apt install -y python3-pip parallel unzip wget curl jq libpcap-dev
+apt install -y python3-pip parallel unzip wget curl jq libpcap-dev golang-go masscan whois git
 
 # Install pipx and MANSPIDER
 pip install pipx
@@ -65,16 +65,6 @@ GOROOT="/usr/local/go"
 PATH="${PATH}:${GOROOT}/bin"
 GOPATH=$HOME/go
 PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
-
-# Install additional tools
-echo "Installing masscan, whois, git..."
-apt-get install -y masscan whois git
-
-# Install Golang if it's not already installed
-if ! go version &>/dev/null; then
-    echo "Installing Golang..."
-    apt install -y golang-go
-fi
 
 # Install Go packages
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
