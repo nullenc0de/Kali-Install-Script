@@ -69,6 +69,8 @@ PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
 
 # Install Go packages
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+source ~/.zshrc
+pdtm -ia
 go install -v github.com/tomnomnom/hacks/kxss@latest
 go install -v github.com/Damian89/ffufPostprocessing@latest
 go install -v github.com/BishopFox/jsluice/cmd/jsluice@latest
