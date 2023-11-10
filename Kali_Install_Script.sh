@@ -11,7 +11,8 @@
 apt update && apt upgrade -y
 
 # Install required packages
-apt install -y python3-pip parallel unzip wget curl jq libpcap-dev golang-go masscan whois git
+apt install -y python3-pip parallel unzip wget curl jq libpcap-dev golang-go masscan whois git libkrb5-dev 
+pip install gssapi
 
 # Install pipx and MANSPIDER
 pip install pipx
