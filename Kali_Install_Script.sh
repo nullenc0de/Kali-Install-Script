@@ -72,6 +72,9 @@ go install -v github.com/Damian89/ffufPostprocessing@latest
 go install -v github.com/BishopFox/jsluice/cmd/jsluice@latest
 go install -v github.com/ffuf/ffuf/v2@latest
 
+# Fix pdtm installation and create symlink
+rm -rf /root/.config/pdtm && pdtm_path=$(find / -type f -executable -name pdtm 2>/dev/null || echo "$HOME/go/bin/pdtm") && ln -sf $pdtm_path /usr/local/bin/pdtm
+
 # Install projectdiscovery tools
 pdtm -install-all
 pdtm -ua
@@ -81,3 +84,5 @@ echo 'export PATH="${PATH}:/opt/linWinPwn:/opt/Seth:/opt/SeeYouCM-Thief:/opt/wif
 
 # Reload shell configuration
 source ~/.bashrc
+
+echo "Installation completed. Please open a new terminal or run 'source ~/.bashrc' to apply PATH changes."
