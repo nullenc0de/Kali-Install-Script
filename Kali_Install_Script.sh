@@ -4,8 +4,23 @@
 apt update && apt upgrade -y
 
 # Install required packages
-apt install -y python3-pip parallel unzip wget curl jq libpcap-dev golang-go masscan whois git libkrb5-dev
+apt install -y python3-pip parallel unzip wget curl jq libpcap-dev masscan whois git libkrb5-dev
 pip install gssapi
+
+# Install Go
+wget https://go.dev/dl/go1.21.0.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+rm go1.21.0.linux-amd64.tar.gz
+
+# Configure Go environment variables
+echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
+echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.bashrc
+echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+echo 'export PATH=$PATH:$GOPATH/bin' >> ~/.bashrc
+source ~/.bashrc
+
+# Verify Go installation
+go version
 
 # Install pipx and MANSPIDER
 pip install pipx
@@ -58,13 +73,6 @@ git clone https://github.com/projectdiscovery/fuzzing-templates.git
 # Install brutespray
 apt-get install brutespray -y
 
-# Configure Go environment variables
-echo 'export GOROOT="/usr/local/go"' >> ~/.bashrc
-echo 'export PATH="${PATH}:${GOROOT}/bin"' >> ~/.bashrc
-echo 'export GOPATH=$HOME/go' >> ~/.bashrc
-echo 'export PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"' >> ~/.bashrc
-source ~/.bashrc
-
 # Install Go packages
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 go install -v github.com/tomnomnom/hacks/kxss@latest
@@ -72,8 +80,8 @@ go install -v github.com/Damian89/ffufPostprocessing@latest
 go install -v github.com/BishopFox/jsluice/cmd/jsluice@latest
 go install -v github.com/ffuf/ffuf/v2@latest
 
-# Fix pdtm installation and create symlink
-rm -rf /root/.config/pdtm && pdtm_path=$(find / -type f -executable -name pdtm 2>/dev/null || echo "$HOME/go/bin/pdtm") && ln -sf $pdtm_path /usr/local/bin/pdtm
+# Create symlink for pdtm
+sudo ln -sf $HOME/go/bin/pdtm /usr/local/bin/pdtm
 
 # Install projectdiscovery tools
 pdtm -install-all
