@@ -11,6 +11,9 @@ pip install gssapi
 pip install pipx
 pipx install git+https://github.com/blacklanternsecurity/MANSPIDER
 
+# Change to /opt directory
+cd /opt
+
 # Clone linWinPwn repository and run its install script
 git clone https://github.com/lefayjey/linWinPwn.git
 cd linWinPwn
@@ -21,7 +24,6 @@ cd ..
 pip3 install mitm6
 
 # Update existing repositories in /opt
-cd /opt
 for dir in $(ls); do
   git -C $dir pull
 done
